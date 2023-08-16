@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  width: 100vw;
+  height: 80vh;
+  background: rgba(57, 166, 255, 1);
+}
+
+.banner {
+  width: 80vw;
+  height: 100%;
+  /* background: white; */
+  margin: 0 auto;
+}
