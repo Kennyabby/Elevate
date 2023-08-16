@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className='bar'>
           <div className='lbar'>
             <div className='logo bld'>
-              <label>Service</label>
-              <label style={{ color: '#282c34' }}>Wiz</label>
+              <label>Connectin</label>
+              <label style={{ color: '#282c34' }}>skillz</label>
             </div>
             <ul className='ul'>
               <li className='li'>Home</li>
@@ -20,9 +20,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className='rbar'>
-            <div className='consult'>
+            <div className='brd'>
               <label>Consultancy</label>
-              <BsArrowRight className='arrw marg-ud' />
+              <BsArrowRight className='marg-ud' />
             </div>
 
             <div className='marg-ud'>

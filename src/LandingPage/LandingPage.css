@@ -5,13 +5,88 @@
 
 .home {
   width: 100vw;
-  height: 80vh;
+  height: fit-content;
   background: rgba(57, 166, 255, 1);
 }
 
 .banner {
+  display: inline-flex;
   width: 80vw;
   height: 100%;
-  /* background: white; */
   margin: 0 auto;
+  margin-top: 250px;
+}
+
+.lbanner {
+  height: fit-content;
+  text-align: left;
+  width: 50%;
+  display: block;
+}
+
+.lbl {
+  font-size: 4vw;
+}
+
+.lm {
+  height: fit-content;
+  display: inline-flex;
+  margin: 50px auto;
+  gap: 50px;
+}
+
+.b-marg-ud {
+  cursor: pointer;
+  margin: auto;
+}
+.wtbl {
+  display: inline-flex;
+  width: fit-content;
+  background: white;
+  color: rgba(57, 166, 255, 1);
+  background: white;
+  padding: 18px 25px;
+  gap: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.rbanner {
+  height: fit-content;
+  margin-left: auto;
+}
+
+.wcircle {
+  position: relative;
+  background: white;
+  height: 34vw;
+  width: 34vw;
+  border-radius: 50%;
+}
+.bcircle {
+  position: absolute;
+  margin: 0px;
+  background: rgba(57, 166, 255, 1);
+  height: 16vw;
+  width: 16vw;
+  border-radius: 50%;
+}
+
+.rt {
+  right: 0px;
+  top: 0px;
+}
+
+.lb {
+  bottom: 0px;
+  left: 0px;
+}
+
+.bannimg {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -ms-transform: translate(-44%);
+  transform: translate(-44%);
+  z-index: 1;
 }

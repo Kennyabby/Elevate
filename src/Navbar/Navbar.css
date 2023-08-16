@@ -4,11 +4,12 @@
   top: 0;
   width: 100vw;
   min-height: 100px;
-  z-index: 1;
+  z-index: 2;
   background: rgba(0, 0, 0, 0);
 }
 
 .marg-ud {
+  cursor: pointer;
   margin: 5px auto;
 }
 .bar {
@@ -28,8 +29,8 @@
   margin-left: auto;
 }
 
-.consult {
-  padding: 10px 20px;
+.brd {
+  padding: 8px 20px;
   border: solid rgba(220, 220, 220) 2px;
   font-size: 1rem;
   margin: 5px;
@@ -37,11 +38,12 @@
   border-radius: 7px;
   display: inline-flex;
   gap: 5px;
+  cursor: pointer;
 }
 
 .logo {
-  margin-right: 15%;
-  font-size: 1.5rem;
+  margin-right: 12%;
+  font-size: 1.7rem;
 }
 
 .bld {
