@@ -1,0 +1,22 @@
+.cnt-tp {
+  margin-top: 300px;
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0px;
+  top: 230px;
+  width: 100vw;
+}
+
+.cnt-frm {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: rgba(37, 136, 255, 1);
+  height: 700px;
+  width: 75%;
+  margin: auto;
+  z-index: 1;
+}

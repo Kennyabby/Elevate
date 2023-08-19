@@ -1,0 +1,9 @@
+.star {
+  margin: 15px auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 'fit-content';
+  font-size: 1.1rem;
+  gap: 2px;
+}
