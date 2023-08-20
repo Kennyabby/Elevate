@@ -25,7 +25,6 @@ const Header = () => {
               <div className='bcircle lb'></div>
               <img className='bannimg' src={bannerimg} alt='bannerimg' />
             </div>
-            <div className='avatar'></div>
           </div>
         </div>
       </div>

@@ -4,23 +4,17 @@
 }
 
 .home {
-  position: relative;
   width: 100vw;
-  height: 680px;
+  height: fit-content;
   background: rgba(57, 166, 255, 1);
 }
 
 .banner {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%);
   display: inline-flex;
   width: 85%;
   height: fit-content;
   margin: 0 auto;
-  top: 200px;
-  margin-bottom: 0px;
+  margin-top: 200px;
 }
 
 .lbanner {
@@ -68,6 +62,7 @@
   border-radius: 50%;
 }
 .bcircle {
+  padding: 0px;
   position: absolute;
   margin: 0px;
   background: rgba(57, 166, 255, 1);
