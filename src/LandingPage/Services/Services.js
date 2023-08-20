@@ -229,7 +229,7 @@ const Services = () => {
           freelances
         </label>
 
-        <div className='pln fl'>
+        <div className='pln'>
           {plan.map((pln, i) => {
             return (
               <div className={'pln-cnt' + (i === 1 ? ' boxsh' : '')}>

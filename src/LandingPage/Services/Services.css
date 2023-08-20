@@ -45,20 +45,21 @@
 }
 
 .mtf {
-  width: 70vw;
-  margin-top: 100px;
+  width: 85vw;
+  margin-top: 200px;
   display: inline-flex;
 }
 
 .lmtf {
   position: relative;
   width: 50%;
+  margin-right: auto;
 }
 
 .gcircle {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
   left: -70px;
   top: 60px;
   background: rgba(10, 150, 0, 1);
@@ -107,11 +108,13 @@
 
 .off {
   margin: auto;
-  width: 70vw;
+  width: 85vw;
   margin-top: 200px;
 }
 
 .pln {
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 80px;
 }
@@ -208,8 +211,8 @@
 }
 
 .rtview {
-  /* white-space: normal; */
-  word-wrap: break-word;
+  white-space: normal;
+  /* word-wrap: break-word; */
   display: inline-block;
   margin: auto 10px;
   border-radius: 5px;
