@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className='rbar'>
             <div className='brd'>
               <label>Consultancy</label>
-              <BsArrowRight className='marg-ud' />
+              <BsArrowRight />
             </div>
 
             <div className='marg-ud'>

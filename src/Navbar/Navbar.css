@@ -13,8 +13,8 @@
   margin: 5px auto;
 }
 .bar {
-  display: inline-flex;
-  width: 75%;
+  display: flex;
+  width: 85%;
   margin: 10px auto;
   justify-content: center;
 }
@@ -30,19 +30,23 @@
 }
 
 .brd {
-  padding: 8px 20px;
+  padding: 12px 20px;
+  width: fit-content;
+  height: fit-content;
   border: solid rgba(220, 220, 220) 2px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 5px;
   margin-right: 20px;
   border-radius: 7px;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
 }
 
 .logo {
-  margin-right: 7%;
+  margin-right: 4vw;
   font-size: 1.7rem;
 }
 
