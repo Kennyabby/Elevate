@@ -115,12 +115,12 @@
 
 .ctcbtm-lbl {
   margin-right: auto;
-  width: min-content;
+  width: 30%;
   text-align: left;
 }
 
 .ctcwrp {
-  margin: 20px 0px;
+  margin: 12px 0px;
 }
 
 .ctcadr {
@@ -128,14 +128,19 @@
 }
 
 .ctcbtm-rt {
+  margin-left: auto;
+  width: 60%;
   position: relative;
 }
 
 .bccircle {
   position: relative;
+  margin-left: auto;
+  margin-right: -70px;
+  margin-top: 20px;
   background: rgb(34, 113, 180);
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   /* justify-content: center; */
   align-items: center;
@@ -151,4 +156,20 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background: rgba(40, 44, 70, 1);
+}
+
+.lstimg {
+  position: absolute;
+  top: 0px;
+  left: 85px;
+  width: 400px;
+}
+
+.lstmap {
+  position: absolute;
+  bottom: 0px;
+  width: 370px;
+  height: 200px;
+  right: 0px;
+  top: 160px;
 }

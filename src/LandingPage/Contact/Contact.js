@@ -2,6 +2,7 @@ import './Contact.css'
 
 import map from './assets/map.png'
 import cntimg from './assets/cntimg.jpg'
+import lstimg from './assets/lstimg.jpg'
 
 import { BiSolidChevronRight } from 'react-icons/bi'
 import { LuContact } from 'react-icons/lu'
@@ -53,7 +54,9 @@ const Contact = () => {
       </div>
       <div className='ctcbtm'>
         <div className='ctcbtm-lbl'>
-          <div className='midfnt bld'>We Love To Work Together</div>
+          <div className='midfnt bld' style={{ width: '95%' }}>
+            We Love To Work Together
+          </div>
           <div style={{ display: 'block', marginTop: '50px' }}>
             <div className='fl ctcwrp'>
               <LiaHomeSolid
@@ -94,6 +97,8 @@ const Contact = () => {
           <div className='bccircle'>
             <div className='bgcircle'></div>
           </div>
+          <img src={lstimg} alt='lstimg' className='lstimg' />
+          <img src={map} alt='map' className='lstmap' />
         </div>
       </div>
     </>
