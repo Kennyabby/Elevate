@@ -4,6 +4,8 @@ import map from './assets/map.png'
 import cntimg from './assets/cntimg.jpg'
 
 import { BiSolidChevronRight } from 'react-icons/bi'
+import { LuContact } from 'react-icons/lu'
+import { LiaHomeSolid } from 'react-icons/lia'
 
 const Contact = () => {
   return (

@@ -4,17 +4,22 @@
 }
 
 .home {
+  position: relative;
   width: 100vw;
   height: 680px;
   background: rgba(57, 166, 255, 1);
 }
 
 .banner {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
   display: inline-flex;
   width: 85%;
   height: fit-content;
   margin: 0 auto;
-  margin-top: 200px;
+  top: 200px;
   margin-bottom: 0px;
 }
 
