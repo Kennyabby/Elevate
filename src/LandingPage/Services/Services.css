@@ -1,6 +1,6 @@
 .spts {
   margin: 100px auto;
-  width: 65vw;
+  width: 80vw;
 }
 
 .spts-lbl {
@@ -21,7 +21,7 @@
 .spts-cont {
   width: 100%;
   margin-top: 100px;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -208,7 +208,8 @@
 }
 
 .rtview {
-  white-space: wrap;
+  /* white-space: normal; */
+  word-wrap: break-word;
   display: inline-block;
   margin: auto 10px;
   border-radius: 5px;

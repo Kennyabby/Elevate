@@ -15,8 +15,7 @@
 .bar {
   display: flex;
   width: 85%;
-  margin: 10px auto;
-  justify-content: center;
+  margin: 10px 50px;
 }
 
 .lbar {
