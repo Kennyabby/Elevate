@@ -51,9 +51,50 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className='ctc-btm'>
-        <div></div>
-        <div></div>
+      <div className='ctcbtm'>
+        <div className='ctcbtm-lbl'>
+          <div className='midfnt bld'>We Love To Work Together</div>
+          <div style={{ display: 'block', marginTop: '50px' }}>
+            <div className='fl ctcwrp'>
+              <LiaHomeSolid
+                style={{
+                  color: 'white',
+                  fontSize: '1.6rem',
+                  marginRight: '15px',
+                  fontWeight: 'bold',
+                }}
+              />
+              <div>
+                <div className='bld'>Address</div>
+                <div className='ctcadr'>
+                  4517 Washington Ave, Manchester, Kentucky 39495
+                </div>
+              </div>
+            </div>
+            <div className='fl ctcwrp'>
+              <LuContact
+                style={{
+                  color: 'white',
+                  fontSize: '1.6rem',
+                  marginRight: '15px',
+                  fontWeight: 'bold',
+                }}
+              />
+              <div>
+                <div className='bld'>Contact</div>
+                <div className='ctcadr'>
+                  <p>+44 7393 830395</p>
+                  <p>bill.sanders@example.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='ctcbtm-rt'>
+          <div className='bccircle'>
+            <div className='bgcircle'></div>
+          </div>
+        </div>
       </div>
     </>
   )

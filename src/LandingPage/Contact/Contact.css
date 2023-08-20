@@ -1,6 +1,7 @@
 .cnt-tp {
   margin-top: 300px;
   position: relative;
+  height: 800px;
 }
 
 .map {
@@ -8,6 +9,7 @@
   left: 0px;
   top: 230px;
   width: 100vw;
+  height: 90%;
 }
 
 .cnt-frm {
@@ -102,4 +104,51 @@
   margin: 15px;
   padding: 20px;
   cursor: pointer;
+}
+
+.ctcbtm {
+  margin: auto;
+  width: 85vw;
+  margin-top: 250px;
+  display: inline-flex;
+}
+
+.ctcbtm-lbl {
+  margin-right: auto;
+  width: min-content;
+  text-align: left;
+}
+
+.ctcwrp {
+  margin: 20px 0px;
+}
+
+.ctcadr {
+  margin: 10px 0px;
+}
+
+.ctcbtm-rt {
+  position: relative;
+}
+
+.bccircle {
+  position: relative;
+  background: rgb(34, 113, 180);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.bgcircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin: auto; */
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(40, 44, 70, 1);
 }
