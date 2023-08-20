@@ -185,11 +185,14 @@ const Services = () => {
           <div className='gcircle'></div>
           <img className='mtfimg' src={cskillzimg} alt='cskillzimg' />
           <iframe
-            src='https://www.facebook.com/www.connectinskillz.org/videos/how-comfortable-are-you-with-what-your-learning-and-the-tools-you-are-using-surv/182539273363784/'
+            src='https://www.youtube.com/embed/m-o4BE6Gkhw'
+            title='YouTube video player'
+            frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowfullscreen
             width='560px'
             height='315px'
             className='vid'
-            title='vid'
           ></iframe>
         </div>
         <div className='rmtf'>
@@ -274,13 +277,13 @@ const Services = () => {
             via Email from our contact form
           </label>
           <div className='abt fl smfnt'>
-            <img src={avatar} logo='avatar' className='avatar' alt='avatar' />
+            <img src={avatar} className='avatar' alt='avatar' />
             <div>
               <div className='bld'>
                 "Connectinskillz helps you track how many more days you need to
                 study to reach your goal for the month and the year"
               </div>
-              <RatingStar rating={4.5} color={'yellow'} />
+              <RatingStar rating={4.5} color={'rgba(255,215,0)'} />
               <div className='abtlbl'>
                 <div className='bl'>Ariel</div>
                 <div>Network Administrator</div>
@@ -295,7 +298,7 @@ const Services = () => {
                 <div className='rtview'>
                   <RatingStar
                     rating={review.rating}
-                    color='yellow'
+                    color={'rgba(255,215,0)'}
                     className='rvw-st'
                   />
                   <div>{review.comment}</div>
