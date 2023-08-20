@@ -96,8 +96,9 @@
 }
 
 .frmbtn {
-  background: rgba(10, 150, 0, 1);
+  background: rgb(29, 211, 16);
   color: white;
+  font-weight: bold;
   margin: 15px;
   padding: 20px;
   cursor: pointer;

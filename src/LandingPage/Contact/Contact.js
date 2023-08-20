@@ -45,11 +45,14 @@ const Contact = () => {
             <input className='input' placeholder='Name*' />
             <input className='input' placeholder='Email*' />
             <textarea className='area' placeholder='Message' />
-            <div className='frmbtn'>Order Now</div>
+            <div className='frmbtn'>Book Now</div>
           </div>
         </div>
       </div>
-      <div></div>
+      <div className='ctc-btm'>
+        <div></div>
+        <div></div>
+      </div>
     </>
   )
 }

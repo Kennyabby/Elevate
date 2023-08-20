@@ -63,7 +63,7 @@ const plan = [
     ],
   },
   {
-    type: 'Free Plan',
+    type: 'Basic Plan',
     title: 'Organize across all the apps by hand',
     price: '19',
     services: [
@@ -90,7 +90,7 @@ const plan = [
     ],
   },
   {
-    type: 'Free Plan',
+    type: 'Premium Plan',
     title: 'Organize across all the apps by hand',
     price: '49',
     services: [
@@ -254,7 +254,7 @@ const Services = () => {
                           style={{
                             marginBottom: '0px',
                             color: svc.available
-                              ? 'rgba(10, 150, 0, 1)'
+                              ? 'rgb(29, 211, 16)'
                               : 'rgba(200,200,200)',
                           }}
                         />
