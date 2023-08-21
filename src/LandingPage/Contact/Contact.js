@@ -1,15 +1,19 @@
+import { useContext } from 'react'
+
 import './Contact.css'
 
 import map from './assets/map.png'
 import cntimg from './assets/cntimg.jpg'
 import lstimg from './assets/lstimg.jpg'
 
+import ContextProvider from '../../ContextProvider'
+
 import { BiSolidChevronRight } from 'react-icons/bi'
 import { LuContact } from 'react-icons/lu'
 import { LiaHomeSolid } from 'react-icons/lia'
-import { HiChevronRight } from 'react-icons/hi'
 
 const Contact = () => {
+  const { winSize } = useContext(ContextProvider)
   return (
     <>
       <div className='cnt-tp'>
@@ -61,7 +65,10 @@ const Contact = () => {
       </div>
       <div className='ctcbtm'>
         <div className='ctcbtm-lbl'>
-          <div className='midfnt bld' style={{ width: '95%' }}>
+          <div
+            className='midfnt bld'
+            style={{ width: winSize > 700 ? '95%' : 'auto' }}
+          >
             We Love To Work Together
           </div>
           <div style={{ display: 'block', marginTop: '50px' }}>

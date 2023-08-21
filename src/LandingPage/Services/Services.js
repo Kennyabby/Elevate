@@ -1,8 +1,10 @@
+import { useContext } from 'react'
 import './Services.css'
 
 import cskillzimg from './assets/cskillzimg.png'
 import avatar from './assets/avatar.png'
 
+import ContextProvider from '../../ContextProvider'
 import { HiOutlineGlobe, HiUserGroup } from 'react-icons/hi'
 import { ImStatsBars } from 'react-icons/im'
 import { SiSecurityscorecard, SiFastlane } from 'react-icons/si'
@@ -157,6 +159,7 @@ const reviews = [
 ]
 
 const Services = () => {
+  const { winSize } = useContext(ContextProvider)
   return (
     <>
       <div className='spts smfnt'>
@@ -197,11 +200,11 @@ const Services = () => {
         </div>
         <div className='rmtf'>
           <div className='midfnt bld rds'>Most trusted in our field</div>
-          <div className='smfnt rds'>
+          <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
             Most calenders are designed for teams. Slate is designed for
             freelances who want a simple way to plan their schedule.
           </div>
-          <div className='smfnt rds'>
+          <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
             <div style={{ margin: '25px auto' }}>
               <div className='bld smfnt fl'>
                 <HiUserGroup className='bl smicon' />

@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+.ftlgt {
+  color: rgba(220, 220, 220, 1);
+}
+
 .ftbtm {
   margin: 50px auto;
   margin-bottom: 30px;
@@ -33,4 +37,23 @@
 
 .ftgap {
   margin: auto 15px;
+}
+
+.ftcpr {
+  color: rgba(220, 220, 220, 1);
+}
+
+@media screen and (max-width: 700px) {
+  .ft {
+    text-align: center;
+    display: block;
+  }
+
+  .ftval {
+    margin: 30px;
+  }
+
+  .ftbtm {
+    margin-top: 80px;
+  }
 }

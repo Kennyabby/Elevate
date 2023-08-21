@@ -172,3 +172,135 @@
   right: 0px;
   top: 180px;
 }
+
+@media screen and (max-width: 700px) {
+  .cnt-tp {
+    margin-top: 300px;
+    position: relative;
+    height: 800px;
+  }
+
+  .map {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 230px;
+    width: 100vw;
+    height: 90%;
+  }
+
+  .cnt-frm {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgb(34, 113, 180);
+    height: 700px;
+    width: fit-content;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .lfrm {
+    display: none;
+  }
+
+  .rfrm {
+    padding: 50px 20px;
+    width: 90vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 5px;
+  }
+
+  .area {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+  }
+
+  .frmbtn {
+    background: rgb(29, 211, 16);
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .ctcbtm {
+    margin: auto;
+    width: 85vw;
+    margin-top: 250px;
+    display: block;
+  }
+
+  .ctcbtm-lbl {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .ctcwrp {
+    margin: 12px 0px;
+  }
+
+  .ctcadr {
+    margin: 10px 0px;
+  }
+
+  .ctcbtm-rt {
+    margin-top: 100px;
+    width: 95vw;
+    position: relative;
+  }
+
+  .bccircle {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 180px;
+    background: rgb(34, 113, 180);
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .bgcircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(40, 44, 70, 1);
+  }
+
+  .lstimg {
+    position: absolute;
+    top: -80px;
+    left: -10px;
+    width: 80vw;
+  }
+
+  .lstmap {
+    position: absolute;
+    bottom: 0px;
+    width: 80vw;
+    height: 50vw;
+    right: 20px;
+    top: 100px;
+  }
+}

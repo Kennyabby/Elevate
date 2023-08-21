@@ -64,3 +64,66 @@
   cursor: pointer;
   margin: 0px 20px;
 }
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: 'block';
+    width: 100vw;
+    min-height: fit-content;
+    background: rgba(57, 166, 255, 1);
+  }
+
+  .navtp {
+    height: fit-content;
+    background: rgba(57, 166, 255, 1);
+  }
+
+  .navbl {
+    display: 'block';
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 2;
+    width: 100vw;
+    /* min-height: fit-content; */
+    background: rgb(34, 113, 180);
+  }
+  .bar {
+    color: rgba(220, 220, 220);
+    margin: 30px auto;
+    display: block;
+    width: 95%;
+  }
+  .lbar {
+    display: block;
+  }
+  .logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px;
+    font-size: 1rem;
+  }
+  .menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.4rem;
+  }
+  .ul {
+    margin-top: 100px;
+    display: block;
+  }
+  .li {
+    margin: 30px;
+    font-size: 1.3rem;
+  }
+  .rbar {
+    display: block;
+    margin: 30px auto;
+    margin-top: 80px;
+  }
+  .brd {
+    font-weight: bold;
+    margin: 15px auto;
+  }
+}
