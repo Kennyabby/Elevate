@@ -136,11 +136,11 @@
 .bccircle {
   position: relative;
   margin-left: auto;
-  margin-right: -70px;
-  margin-top: 20px;
+  margin-right: -65px;
+  margin-top: 30px;
   background: rgb(34, 113, 180);
-  width: 25rem;
-  height: 25rem;
+  width: 27rem;
+  height: 27rem;
   border-radius: 50%;
   /* justify-content: center; */
   align-items: center;
@@ -151,8 +151,8 @@
   top: 50%;
   left: 50%;
   /* margin: auto; */
-  width: 13rem;
-  height: 13rem;
+  width: 17rem;
+  height: 17rem;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background: rgba(40, 44, 70, 1);
@@ -161,7 +161,7 @@
 .lstimg {
   position: absolute;
   top: 0px;
-  left: 85px;
+  left: 55px;
   width: 400px;
 }
 
@@ -171,5 +171,5 @@
   width: 370px;
   height: 200px;
   right: 0px;
-  top: 160px;
+  top: 180px;
 }
