@@ -162,164 +162,166 @@ const Services = () => {
   const { winSize } = useContext(ContextProvider)
   return (
     <>
-      <div className='spts smfnt'>
-        <div className='spts-lbl'>
-          <div className='midfnt bld'>Our Specialties</div>
-          <div>
-            Most calenders are designed for teams. Slate is designed for
-            freelances who want a simple way to plan their schedule.
-          </div>
-        </div>
-        <div className='spts-cont'>
-          {sptsContent.map((bann) => {
-            const { icon, title, content } = bann
-            return (
-              <div className='minbann'>
-                <div>{icon}</div>
-                <div className='bld marg-udl'>{title}</div>
-                <div className='smfnt'>{content}</div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-      <div className='mtf'>
-        <div className='lmtf'>
-          <div className='gcircle'></div>
-          <img className='mtfimg' src={cskillzimg} alt='cskillzimg' />
-          <iframe
-            src='https://www.youtube.com/embed/m-o4BE6Gkhw'
-            title='YouTube video player'
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            allowfullscreen
-            width='560px'
-            height='315px'
-            className='vid'
-          ></iframe>
-        </div>
-        <div className='rmtf'>
-          <div className='midfnt bld rds'>Most trusted in our field</div>
-          <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
-            Most calenders are designed for teams. Slate is designed for
-            freelances who want a simple way to plan their schedule.
-          </div>
-          <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
-            <div style={{ margin: '25px auto' }}>
-              <div className='bld smfnt fl'>
-                <HiUserGroup className='bl smicon' />
-                <label>Organize across all apps by hand</label>
-              </div>
-              <div className='smfnt'>
-                Most calenders are designed for teams. Slate is designed for
-                freelances
-              </div>
-            </div>
-            <div style={{ margin: '25px auto' }}>
-              <div className='bld smfnt fl'>
-                <RiTimerFlashLine className='bl smicon' />
-                <label>Organize across all apps by hand</label>
-              </div>
-              <div className='smfnt'>
-                Most calenders are designed for teams. Slate is designed for
-                freelances
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='off'>
-        <div className='bld midfnt'>We Offer Greate Prices</div>
-        <label className='smfnt'>
-          Most calenders are designed for teams. Slate is designed for
-          freelances
-        </label>
-
-        <div className='pln'>
-          {plan.map((pln, i) => {
-            return (
-              <div className={'pln-cnt' + (i === 1 ? ' boxsh' : '')}>
-                <div className='pln-tp bld'>{pln.type}</div>
-                <div className='pln-ttl smfnt'>{pln.title}</div>
-                <div className='bl smfnt pln-amt'>
-                  <div className='pln-prc bld'>{pln.price}</div>
-                  <div>
-                    <div className='bld'>$</div>
-                    <div>Per Month</div>
-                  </div>
-                </div>
-                <div className='pln-svc'>
-                  {pln.services.map((svc) => {
-                    return (
-                      <div className='pln-svc-cnt fl'>
-                        <BsFillPatchCheckFill
-                          className='smicon'
-                          style={{
-                            marginBottom: '0px',
-                            color: svc.available
-                              ? 'rgb(29, 211, 16)'
-                              : 'rgba(200,200,200)',
-                          }}
-                        />
-                        <label className='smfnt bld'>{svc.type}</label>
-                      </div>
-                    )
-                  })}
-                </div>
-                <div className='pln-btn smfnt'>Order Now</div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-      <div className='rv'>
-        <div className='clst'>
-          <div className='bld midfnt'>99% Clients Satisfaction</div>
-          <label className='smfnt'>
-            If you don't see an answer to your question, you can reach out to us
-            via Email from our contact form
-          </label>
-          <div className='abt fl smfnt'>
-            <img src={avatar} className='avatar' alt='avatar' />
+      <div className='services'>
+        <div className='spts smfnt'>
+          <div className='spts-lbl'>
+            <div className='midfnt bld'>Our Specialties</div>
             <div>
-              <div className='bld'>
-                "Connectinskillz helps you track how many more days you need to
-                study to reach your goal for the month and the year"
-              </div>
-              <RatingStar rating={4.5} color={'rgba(255,215,0)'} />
-              <div className='abtlbl'>
-                <div className='bl'>Ariel</div>
-                <div>Network Administrator</div>
-              </div>
+              Most calenders are designed for teams. Slate is designed for
+              freelances who want a simple way to plan their schedule.
             </div>
           </div>
-        </div>
-        <div className='smfnt rtcont'>
-          <div className='wrp-cnt'>
-            {reviews.map((review) => {
+          <div className='spts-cont'>
+            {sptsContent.map((bann) => {
+              const { icon, title, content } = bann
               return (
-                <div className='rtview'>
-                  <RatingStar
-                    rating={review.rating}
-                    color={'rgba(255,215,0)'}
-                    className='rvw-st'
-                  />
-                  <div>{review.comment}</div>
-                  <div className='rtprof fl'>
-                    <img
-                      src={avatar}
-                      logo='avatar'
-                      className='avtr'
-                      alt='avatar'
-                    />
-                    <div className='bld'>
-                      <div className='bl'>{review.name}</div>
-                      <div>{review.role}</div>
-                    </div>
-                  </div>
+                <div className='minbann'>
+                  <div>{icon}</div>
+                  <div className='bld marg-udl'>{title}</div>
+                  <div className='smfnt'>{content}</div>
                 </div>
               )
             })}
+          </div>
+        </div>
+        <div className='mtf'>
+          <div className='lmtf'>
+            <div className='gcircle'></div>
+            <img className='mtfimg' src={cskillzimg} alt='cskillzimg' />
+            <iframe
+              src='https://www.youtube.com/embed/m-o4BE6Gkhw'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+              width='560px'
+              height='315px'
+              className='vid'
+            ></iframe>
+          </div>
+          <div className='rmtf'>
+            <div className='midfnt bld rds'>Most trusted in our field</div>
+            <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
+              Most calenders are designed for teams. Slate is designed for
+              freelances who want a simple way to plan their schedule.
+            </div>
+            <div className={'smfnt' + (winSize > 700 ? 'rds' : '')}>
+              <div style={{ margin: '25px auto' }}>
+                <div className='bld smfnt fl'>
+                  <HiUserGroup className='bl smicon' />
+                  <label>Organize across all apps by hand</label>
+                </div>
+                <div className='smfnt'>
+                  Most calenders are designed for teams. Slate is designed for
+                  freelances
+                </div>
+              </div>
+              <div style={{ margin: '25px auto' }}>
+                <div className='bld smfnt fl'>
+                  <RiTimerFlashLine className='bl smicon' />
+                  <label>Organize across all apps by hand</label>
+                </div>
+                <div className='smfnt'>
+                  Most calenders are designed for teams. Slate is designed for
+                  freelances
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='off'>
+          <div className='bld midfnt'>We Offer Greate Prices</div>
+          <label className='smfnt'>
+            Most calenders are designed for teams. Slate is designed for
+            freelances
+          </label>
+
+          <div className='pln'>
+            {plan.map((pln, i) => {
+              return (
+                <div className={'pln-cnt' + (i === 1 ? ' boxsh' : '')}>
+                  <div className='pln-tp bld'>{pln.type}</div>
+                  <div className='pln-ttl smfnt'>{pln.title}</div>
+                  <div className='bl smfnt pln-amt'>
+                    <div className='pln-prc bld'>{pln.price}</div>
+                    <div>
+                      <div className='bld'>$</div>
+                      <div>Per Month</div>
+                    </div>
+                  </div>
+                  <div className='pln-svc'>
+                    {pln.services.map((svc) => {
+                      return (
+                        <div className='pln-svc-cnt fl'>
+                          <BsFillPatchCheckFill
+                            className='smicon'
+                            style={{
+                              marginBottom: '0px',
+                              color: svc.available
+                                ? 'rgb(29, 211, 16)'
+                                : 'rgba(200,200,200)',
+                            }}
+                          />
+                          <label className='smfnt bld'>{svc.type}</label>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <div className='pln-btn smfnt'>Order Now</div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+        <div className='rv'>
+          <div className='clst'>
+            <div className='bld midfnt'>99% Clients Satisfaction</div>
+            <label className='smfnt'>
+              If you don't see an answer to your question, you can reach out to
+              us via Email from our contact form
+            </label>
+            <div className='abt fl smfnt'>
+              <img src={avatar} className='avatar' alt='avatar' />
+              <div>
+                <div className='bld'>
+                  "Connectinskillz helps you track how many more days you need
+                  to study to reach your goal for the month and the year"
+                </div>
+                <RatingStar rating={4.5} color={'rgba(255,215,0)'} />
+                <div className='abtlbl'>
+                  <div className='bl'>Ariel</div>
+                  <div>Network Administrator</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='smfnt rtcont'>
+            <div className='wrp-cnt'>
+              {reviews.map((review) => {
+                return (
+                  <div className='rtview'>
+                    <RatingStar
+                      rating={review.rating}
+                      color={'rgba(255,215,0)'}
+                      className='rvw-st'
+                    />
+                    <div>{review.comment}</div>
+                    <div className='rtprof fl'>
+                      <img
+                        src={avatar}
+                        logo='avatar'
+                        className='avtr'
+                        alt='avatar'
+                      />
+                      <div className='bld'>
+                        <div className='bl'>{review.name}</div>
+                        <div>{review.role}</div>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>

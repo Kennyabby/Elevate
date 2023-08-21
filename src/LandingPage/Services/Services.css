@@ -1,3 +1,8 @@
+.services {
+  margin: 0px;
+  width: 100vw;
+}
+
 .spts {
   margin: 100px auto;
   width: 80vw;
@@ -9,13 +14,13 @@
 }
 
 .smfnt {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
 
 .midfnt {
   margin: 15px auto;
   width: max-content;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .spts-cont {
@@ -33,7 +38,7 @@
   height: 240px;
   background: white;
   color: black;
-  padding: 20px;
+  padding: 40px 25px;
 }
 
 .bl-icon {
@@ -55,6 +60,7 @@
 .lmtf {
   position: relative;
   width: 50%;
+  height: 500px;
   margin-right: auto;
 }
 
@@ -116,7 +122,7 @@
 
 .pln {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   margin-top: 80px;
@@ -267,10 +273,11 @@
     width: 100vw;
     /* margin-right: auto; */
   }
+
   .midfnt {
     margin: 15px auto;
     width: max-content;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .gcircle {
     position: absolute;
@@ -299,7 +306,7 @@
   }
 
   .rmtf {
-    margin-top: 350px;
+    margin-top: 100px;
     text-align: left;
     width: 90vw;
     /* margin-left: auto; */
@@ -339,9 +346,9 @@
   }
 
   .pln-cnt {
+    display: block;
     margin: 20px auto;
     width: 90vw;
-    flex-wrap: wrap;
     border-radius: 6px;
     height: fit-content;
     padding: 27px;
@@ -377,7 +384,7 @@
 
   .pln-svc-cnt {
     width: max-content;
-    margin: 15px auto;
+    margin: 15px 5px;
     height: fit-content;
     align-items: center;
   }
@@ -398,11 +405,13 @@
   }
 
   .rv {
+    width: 100vw;
     margin-top: 200px;
   }
 
   .clst {
-    width: min-content;
+    flex-wrap: wrap;
+    width: 90%;
     margin: 70px auto;
   }
 }

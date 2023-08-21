@@ -21,7 +21,7 @@ const Navbar = () => {
             <BiMenuAltRight className='menu' onClick={handleMenu} />
             <div className='logo bld'>
               <label>Connectin</label>
-              <label style={{ color: '#282c34' }}>skillz</label>
+              <label style={{ color: 'rgb(34, 113, 180)' }}>skillz</label>
             </div>
           </div>
         )}
@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='lbar'>
               <div className='logo bld'>
                 <label>Connectin</label>
-                <label style={{ color: '#282c34' }}>skillz</label>
+                <label style={{ color: 'rgb(34, 113, 180)' }}>skillz</label>
               </div>
               <ul className='ul'>
                 <li className='li'>Home</li>

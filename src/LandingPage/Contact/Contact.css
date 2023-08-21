@@ -182,18 +182,12 @@
 
   .map {
     display: none;
-    position: absolute;
-    left: 0px;
-    top: 230px;
-    width: 100vw;
-    height: 90%;
   }
 
   .cnt-frm {
-    position: absolute;
+    position: normal;
     display: block;
-    left: 50%;
-    transform: translate(-50%, 0);
+    border-radius: 10px;
     background: rgb(34, 113, 180);
     height: 700px;
     width: fit-content;
@@ -206,7 +200,7 @@
   }
 
   .rfrm {
-    padding: 50px 20px;
+    padding: 50px 10px;
     width: 90vw;
     text-align: center;
     justify-content: center;
@@ -216,14 +210,14 @@
   .input {
     margin: 20px auto;
     padding: 20px;
-    width: 90%;
+    width: 80%;
     border-radius: 5px;
   }
 
   .area {
     margin: 20px auto;
     padding: 20px;
-    width: 90%;
+    width: 80%;
     height: 150px;
     border-radius: 5px;
   }
