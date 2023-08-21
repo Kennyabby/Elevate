@@ -9,7 +9,7 @@ const Header = () => {
         <div className='banner'>
           <div className='lbanner'>
             <label className='lbl bld'>
-              The Best Products Start With ConnectinSkillz
+              Your Best Shot Lies With ConnectinSkillz
             </label>
             <div className='lm'>
               <div className='wtbl bld'>

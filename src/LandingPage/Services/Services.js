@@ -230,7 +230,7 @@ const Services = () => {
           </div>
         </div>
         <div className='off'>
-          <div className='bld midfnt'>We Offer Greate Prices</div>
+          <div className='bld midfnt emerg'>We Offer Greate Prices</div>
           <label className='smfnt'>
             Most calenders are designed for teams. Slate is designed for
             freelances
@@ -275,7 +275,7 @@ const Services = () => {
         </div>
         <div className='rv'>
           <div className='clst'>
-            <div className='bld midfnt'>99% Clients Satisfaction</div>
+            <div className='bld midfnt emerg'>99% Clients Satisfaction</div>
             <label className='smfnt'>
               If you don't see an answer to your question, you can reach out to
               us via Email from our contact form

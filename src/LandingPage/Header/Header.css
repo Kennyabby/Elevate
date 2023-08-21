@@ -11,7 +11,6 @@
 
 .banner {
   display: inline-flex;
-  flex-wrap: wrap;
   width: 85%;
   height: fit-content;
   margin: 0 auto;
@@ -95,6 +94,7 @@
 
 @media screen and (max-width: 700px) {
   .banner {
+    flex-wrap: wrap;
     margin-top: 100px;
   }
 
@@ -156,7 +156,7 @@
   }
 
   .bannimg {
-    width: 90vw;
+    width: 100vw;
     position: absolute;
     bottom: 0px;
     left: 50%;

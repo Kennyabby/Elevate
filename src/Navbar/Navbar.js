@@ -17,11 +17,24 @@ const Navbar = () => {
     <>
       <div className={menuClicked && winSize <= 700 ? 'navbl' : 'nav'}>
         {winSize <= 700 && (
-          <div className='navtp'>
+          <div
+            className='navtp'
+            style={{
+              background: menuClicked
+                ? 'rgb(34, 113, 180)'
+                : 'rgba(57, 166, 255, 1)',
+            }}
+          >
             <BiMenuAltRight className='menu' onClick={handleMenu} />
             <div className='logo bld'>
               <label>Connectin</label>
-              <label style={{ color: 'rgb(34, 113, 180)' }}>skillz</label>
+              <label
+                style={{
+                  color: 'rgb(34, 113, 180)',
+                }}
+              >
+                skillz
+              </label>
             </div>
           </div>
         )}
@@ -30,7 +43,11 @@ const Navbar = () => {
             <div className='lbar'>
               <div className='logo bld'>
                 <label>Connectin</label>
-                <label style={{ color: 'rgb(34, 113, 180)' }}>skillz</label>
+                <label
+                  style={{ color: menuClicked ? 'black' : 'rgb(34, 113, 180)' }}
+                >
+                  skillz
+                </label>
               </div>
               <ul className='ul'>
                 <li className='li'>Home</li>

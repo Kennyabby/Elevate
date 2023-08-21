@@ -92,11 +92,12 @@
     width: 100vw;
     background: rgb(34, 113, 180);
     padding-bottom: 30px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
   .bar {
     color: rgba(220, 220, 220);
-    margin: 30px auto;
+    margin: auto;
+    margin-bottom: 30px;
     display: block;
     width: 95%;
   }
@@ -114,7 +115,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   .ul {
     display: block;
