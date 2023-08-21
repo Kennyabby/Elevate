@@ -62,16 +62,15 @@
   font-size: 1rem;
   text-align: left;
   font-weight: bold;
-  padding: 30px 50px;
-  width: 70%;
+  padding: 30px 30px;
+  width: 80%;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.7);
   color: black;
 }
 
 .ctcarr {
-  /* margin-top: -60px; */
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .rfrm {

@@ -7,6 +7,7 @@ import lstimg from './assets/lstimg.jpg'
 import { BiSolidChevronRight } from 'react-icons/bi'
 import { LuContact } from 'react-icons/lu'
 import { LiaHomeSolid } from 'react-icons/lia'
+import { HiChevronRight } from 'react-icons/hi'
 
 const Contact = () => {
   return (
@@ -19,21 +20,27 @@ const Contact = () => {
             <div className='cntdtl-cont'>
               <div className='ctrl-ctc'>
                 <div className='cntdtl'>
-                  <BiSolidChevronRight className='ctcarr bl' />
+                  <div className='ctcarr bl'>
+                    <BiSolidChevronRight id='3' />
+                  </div>
                   <div>
                     <label className='bl'>Address</label>
                     <div>2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
                   </div>
                 </div>
                 <div className='cntdtl'>
-                  <BiSolidChevronRight className='ctcarr bl' />
+                  <div className='ctcarr bl'>
+                    <BiSolidChevronRight id='2' />
+                  </div>
                   <div>
                     <label className='bl'>Phone</label>
                     <div>{'(205) 555-0100'}</div>
                   </div>
                 </div>
                 <div className='cntdtl'>
-                  <BiSolidChevronRight className='ctcarr bl' />
+                  <div className='ctcarr bl'>
+                    <BiSolidChevronRight id='1' />
+                  </div>
                   <div>
                     <label className='bl'>Email</label>
                     <div>alma.lawson@example.com</div>
@@ -59,14 +66,16 @@ const Contact = () => {
           </div>
           <div style={{ display: 'block', marginTop: '50px' }}>
             <div className='fl ctcwrp'>
-              <LiaHomeSolid
-                style={{
-                  color: 'white',
-                  fontSize: '1.6rem',
-                  marginRight: '15px',
-                  fontWeight: 'bold',
-                }}
-              />
+              <div>
+                <LiaHomeSolid
+                  style={{
+                    color: 'white',
+                    fontSize: '1.6rem',
+                    marginRight: '15px',
+                    fontWeight: 'bold',
+                  }}
+                />
+              </div>
               <div>
                 <div className='bld'>Address</div>
                 <div className='ctcadr'>
@@ -75,14 +84,16 @@ const Contact = () => {
               </div>
             </div>
             <div className='fl ctcwrp'>
-              <LuContact
-                style={{
-                  color: 'white',
-                  fontSize: '1.6rem',
-                  marginRight: '15px',
-                  fontWeight: 'bold',
-                }}
-              />
+              <div>
+                <LuContact
+                  style={{
+                    color: 'white',
+                    fontSize: '1.6rem',
+                    marginRight: '15px',
+                    fontWeight: 'bold',
+                  }}
+                />
+              </div>
               <div>
                 <div className='bld'>Contact</div>
                 <div className='ctcadr'>
