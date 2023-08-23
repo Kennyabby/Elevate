@@ -19,16 +19,16 @@ const RatingStar = ({ rating, color }) => {
   return (
     <>
       <div className='star'>
-        {stars.map((str) => {
-          return <AiFillStar style={{ color: str.color }} />
+        {stars.map((str,id) => {
+          return <AiFillStar style={{ color: str.color }} key={id}/>
         })}
         {otherStars.map((str, i) => {
           if (i === 0 && diff > 0) {
             return (
-              <BsStarHalf style={{ color: str.color, fontSize: '.89rem' }} />
+              <BsStarHalf style={{ color: str.color, fontSize: '.89rem' }} key={i}/>
             )
           } else {
-            return <AiOutlineStar style={{ color: str.color }} />
+            return <AiOutlineStar style={{ color: str.color }} key={i}/>
           }
         })}
       </div>

@@ -84,9 +84,19 @@
     height: 50px;
     background: rgba(57, 166, 255, 1);
   }
-
+  .navst {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    background: rgb(34, 113, 180);
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
   .navbl {
-    display: 'block';
+    display: block;
     margin-left: 0;
     margin-top: 0;
     z-index: 2;

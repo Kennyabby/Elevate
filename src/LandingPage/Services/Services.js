@@ -172,10 +172,10 @@ const Services = ({ forwardRef }) => {
             </div>
           </div>
           <div className='spts-cont'>
-            {sptsContent.map((bann) => {
+            {sptsContent.map((bann, i) => {
               const { icon, title, content } = bann
               return (
-                <div className='minbann'>
+                <div className='minbann' key={i}>
                   <div>{icon}</div>
                   <div className='bld marg-udl'>{title}</div>
                   <div className='smfnt'>{content}</div>
@@ -239,7 +239,7 @@ const Services = ({ forwardRef }) => {
           <div className='pln'>
             {plan.map((pln, i) => {
               return (
-                <div className={'pln-cnt' + (i === 1 ? ' boxsh' : '')}>
+                <div className={'pln-cnt' + (i === 1 ? ' boxsh' : '')} key={i}>
                   <div className='pln-tp bld'>{pln.type}</div>
                   <div className='pln-ttl smfnt'>{pln.title}</div>
                   <div className='bl smfnt pln-amt'>
@@ -250,9 +250,9 @@ const Services = ({ forwardRef }) => {
                     </div>
                   </div>
                   <div className='pln-svc'>
-                    {pln.services.map((svc) => {
+                    {pln.services.map((svc, id) => {
                       return (
-                        <div className='pln-svc-cnt fl'>
+                        <div className='pln-svc-cnt fl' key={id}>
                           <BsFillPatchCheckFill
                             className='smicon'
                             style={{
@@ -297,9 +297,9 @@ const Services = ({ forwardRef }) => {
           </div>
           <div className='smfnt rtcont'>
             <div className='wrp-cnt'>
-              {reviews.map((review) => {
+              {reviews.map((review, i) => {
                 return (
-                  <div className='rtview'>
+                  <div className='rtview' key={i}>
                     <RatingStar
                       rating={review.rating}
                       color={'rgba(255,215,0)'}
