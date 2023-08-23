@@ -12,11 +12,11 @@ import { BiSolidChevronRight } from 'react-icons/bi'
 import { LuContact } from 'react-icons/lu'
 import { LiaHomeSolid } from 'react-icons/lia'
 
-const Contact = () => {
+const Contact = ({ forwardRef }) => {
   const { winSize } = useContext(ContextProvider)
   return (
     <>
-      <div className='cnt-tp'>
+      <div className='cnt-tp' ref={forwardRef}>
         <img className='map' src={map} alt='map' />
         <div className='cnt-frm'>
           <div className='lfrm'>

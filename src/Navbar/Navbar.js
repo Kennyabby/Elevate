@@ -1,18 +1,45 @@
-import { useContext, useState } from 'react'
+import { useContext, useState, useRef } from 'react'
 import './Navbar.css'
 import ContextProvider from '../ContextProvider'
 
 import { BsArrowRight } from 'react-icons/bs'
 import { BiMenuAltRight } from 'react-icons/bi'
 
-const Navbar = () => {
+const Navbar = ({ viewRefs }) => {
   const [menuClicked, setMenuClicked] = useState(false)
   const { winSize } = useContext(ContextProvider)
 
+  const homeRef = useRef(null)
+  const servicesRef = useRef(null)
+  const aboutRef = useRef(null)
+  const contactRef = useRef(null)
+
+  const menuRefs = [homeRef, servicesRef, contactRef, aboutRef]
   const handleMenu = () => {
     setMenuClicked(!menuClicked)
   }
 
+  const handleMenuClick = (e) => {
+    const index = e.target.getAttribute('index')
+    viewRefs.forEach((viewRef, i) => {
+      if (String(i) === index) {
+        menuRefs.forEach((menuRef, id) => {
+          if (id === i) {
+            menuRef.current.style.color = 'white'
+            menuRef.current.style.fontWeight = 'bold'
+          } else {
+            menuRef.current.style.color = 'rgba(220,220,220)'
+            menuRef.current.style.fontWeight = 'lighter'
+          }
+        })
+        viewRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        })
+      }
+    })
+  }
   return (
     <>
       <div className={menuClicked && winSize <= 700 ? 'navbl' : 'nav'}>
@@ -49,11 +76,24 @@ const Navbar = () => {
                   skillz
                 </label>
               </div>
-              <ul className='ul'>
-                <li className='li'>Home</li>
-                <li className='li'>Services</li>
-                <li className='li'>About</li>
-                <li className='li'>Contact</li>
+              <ul className='ul' onClick={handleMenuClick}>
+                <li
+                  className='li'
+                  index={0}
+                  ref={homeRef}
+                  style={{ color: 'white', fontWeight: 'bold' }}
+                >
+                  Home
+                </li>
+                <li className='li' index={1} ref={servicesRef}>
+                  Services
+                </li>
+                <li className='li' index={3} ref={aboutRef}>
+                  About
+                </li>
+                <li className='li' index={2} ref={contactRef}>
+                  Contact
+                </li>
               </ul>
             </div>
             <div className='rbar'>

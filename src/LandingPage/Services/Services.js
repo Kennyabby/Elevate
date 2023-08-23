@@ -158,11 +158,11 @@ const reviews = [
   },
 ]
 
-const Services = () => {
+const Services = ({ forwardRef }) => {
   const { winSize } = useContext(ContextProvider)
   return (
     <>
-      <div className='services'>
+      <div className='services' ref={forwardRef}>
         <div className='spts smfnt'>
           <div className='spts-lbl'>
             <div className='midfnt bld'>Our Specialties</div>

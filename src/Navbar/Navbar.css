@@ -53,6 +53,7 @@
   font-weight: bold;
 }
 .ul {
+  color: rgba(220, 220, 220, 1);
   font-size: 0.9rem;
   width: fit-content;
   display: inline-flex;
@@ -95,7 +96,6 @@
     padding-top: 50px;
   }
   .bar {
-    color: rgba(220, 220, 220);
     margin: auto;
     margin-bottom: 30px;
     display: block;

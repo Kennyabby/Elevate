@@ -3,10 +3,10 @@ import './Footer.css'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { FaInstagram, FaTwitter } from 'react-icons/fa'
 
-const Footer = () => {
+const Footer = ({ forwardRef }) => {
   return (
     <>
-      <footer className='ftcnt'>
+      <footer className='ftcnt' ref={forwardRef}>
         <div className='ft'>
           <div className='ftval'>
             <div className='ftbld'>Washington</div>

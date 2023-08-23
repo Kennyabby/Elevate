@@ -2,10 +2,10 @@ import { BsArrowRight } from 'react-icons/bs'
 import './Header.css'
 
 import bannerimg from './assets/bannerimg.png'
-const Header = () => {
+const Header = ({ forwardRef }) => {
   return (
     <>
-      <div className='home'>
+      <div className='home' ref={forwardRef}>
         <div className='banner'>
           <div className='lbanner'>
             <label className='lbl bld'>
