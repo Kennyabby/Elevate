@@ -1,4 +1,4 @@
-import { useContext, useRef } from 'react'
+import { useContext, useRef, useMemo } from 'react'
 
 import Header from './Header/Header'
 import Services from './Services/Services'
@@ -16,7 +16,10 @@ const LandingPage = ({ setViewRefs }) => {
   const contactRef = useRef(null)
   const footerRef = useRef(null)
 
-  const viewRefs = [headerRef, servicesRef, contactRef, footerRef]
+  const viewRefs = useMemo(() => {
+    return [headerRef, servicesRef, contactRef, footerRef]
+  }, [])
+
   setViewRefs(viewRefs)
 
   return (

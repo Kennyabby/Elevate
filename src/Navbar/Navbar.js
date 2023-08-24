@@ -1,4 +1,4 @@
-import { useContext, useState, useRef, useEffect } from 'react'
+import { useContext, useState, useRef, useEffect, useMemo } from 'react'
 import './Navbar.css'
 import ContextProvider from '../ContextProvider'
 
@@ -17,25 +17,49 @@ const Navbar = ({ viewRefs }) => {
   const navRef = useRef(null)
 
   const [currentMenu, setCurrentMenu] = useState(homeRef)
-  const menuRefs = [homeRef, servicesRef, contactRef, aboutRef]
+  const menuRefs = useMemo(() => {
+    return [homeRef, servicesRef, contactRef, aboutRef]
+  }, [])
 
   const handleMenu = () => {
     setMenuClicked(!menuClicked)
   }
+
   useEffect(() => {
-    if (menuClicked) {
-      const navHeight = navRef.current.getBoundingClientRect().height
-      if (scrollY >= navHeight) {
-        setMakeNavStatic(true)
-      } else {
-        setMakeNavStatic(false)
-      }
-      if (currentMenu.current !== null) {
-        currentMenu.current.style.color = 'white'
-        currentMenu.current.style.fontWeight = 'bold'
-      }
+    if (viewRefs !== undefined) {
+      viewRefs.forEach((viewRef, i) => {
+        if (viewRef.current !== null) {
+          const viewTop = viewRef.current.getBoundingClientRect().top
+          const viewHeight = viewRef.current.getBoundingClientRect().height
+          const currentgap = viewTop + viewHeight
+
+          if (currentgap > 0 && currentgap - 200 < viewHeight) {
+            if (menuRefs[i].current !== null) {
+              setCurrentMenu(menuRefs[i])
+            }
+          } else {
+            if (menuRefs[i].current !== null) {
+              menuRefs[i].current.style.color = 'rgba(220,220,220)'
+              menuRefs[i].current.style.fontWeight = 'lighter'
+            }
+          }
+        }
+      })
     }
-  }, [scrollY, menuClicked, currentMenu])
+  }, [scrollY, menuRefs])
+
+  useEffect(() => {
+    const navHeight = navRef.current.getBoundingClientRect().height
+    if (scrollY >= navHeight) {
+      setMakeNavStatic(true)
+    } else {
+      setMakeNavStatic(false)
+    }
+    if (currentMenu.current !== null) {
+      currentMenu.current.style.color = 'white'
+      currentMenu.current.style.fontWeight = 'bold'
+    }
+  }, [scrollY, currentMenu])
 
   const handleMenuClick = (e) => {
     const index = e.target.getAttribute('index')
