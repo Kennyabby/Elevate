@@ -1,4 +1,6 @@
 import { useContext, useState, useRef, useEffect, useMemo } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+
 import './Navbar.css'
 import ContextProvider from '../ContextProvider'
 
@@ -116,45 +118,77 @@ const Navbar = ({ viewRefs }) => {
             </div>
           </div>
         )}
-        {(winSize > 700 || menuClicked) && (
-          <div className='bar'>
-            <div className='lbar'>
-              <div className='logo bld'>
-                <label>Connectin</label>
-                <label
-                  style={{ color: menuClicked ? 'black' : 'rgb(34, 113, 180)' }}
+        <AnimatePresence mode='wait'>
+          {(winSize > 700 || menuClicked) && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, ease: 'easeIn' }}
+              exit={{
+                opacity: 0,
+                transition: { duration: 1, ease: 'easeOut' },
+              }}
+              className='bar'
+            >
+              <div className='lbar'>
+                <div className='logo bld'>
+                  <label>Connectin</label>
+                  <label
+                    style={{
+                      color: menuClicked ? 'black' : 'rgb(34, 113, 180)',
+                    }}
+                  >
+                    skillz
+                  </label>
+                </div>
+                <motion.ul
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, ease: 'easeIn' }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 1, ease: 'easeOut' },
+                  }}
+                  className='ul'
+                  onClick={handleMenuClick}
                 >
-                  skillz
-                </label>
+                  <li className='li' index={0} ref={homeRef}>
+                    Home
+                  </li>
+                  <li className='li' index={1} ref={servicesRef}>
+                    Services
+                  </li>
+                  <li className='li' index={3} ref={aboutRef}>
+                    About
+                  </li>
+                  <li className='li' index={2} ref={contactRef}>
+                    Contact
+                  </li>
+                </motion.ul>
               </div>
-              <ul className='ul' onClick={handleMenuClick}>
-                <li className='li' index={0} ref={homeRef}>
-                  Home
-                </li>
-                <li className='li' index={1} ref={servicesRef}>
-                  Services
-                </li>
-                <li className='li' index={3} ref={aboutRef}>
-                  About
-                </li>
-                <li className='li' index={2} ref={contactRef}>
-                  Contact
-                </li>
-              </ul>
-            </div>
-            <div className='rbar'>
-              <div className='brd'>
-                <label>Consultancy</label>
-                <BsArrowRight />
-              </div>
+              <motion.div
+                className='rbar'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeIn' }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 1, ease: 'easeOut' },
+                }}
+              >
+                <div className='brd'>
+                  <label>Consultancy</label>
+                  <BsArrowRight />
+                </div>
 
-              <div className='marg-ud'>
-                <div>We are available</div>
-                <div className='bld'>+44 7393 830395</div>
-              </div>
-            </div>
-          </div>
-        )}
+                <div className='marg-ud'>
+                  <div>We are available</div>
+                  <div className='bld'>+44 7393 830395</div>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </>
   )

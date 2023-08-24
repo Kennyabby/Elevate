@@ -1,4 +1,5 @@
 import { BsArrowRight } from 'react-icons/bs'
+import { motion, AnimatePresence } from 'framer-motion'
 import './Header.css'
 
 import bannerimg from './assets/bannerimg.png'
@@ -7,7 +8,16 @@ const Header = ({ forwardRef }) => {
     <>
       <div className='home' ref={forwardRef}>
         <div className='banner'>
-          <div className='lbanner'>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeIn' }}
+            exit={{
+              opacity: 0,
+              transition: { duration: 1, ease: 'easeOut' },
+            }}
+            className='lbanner'
+          >
             <label className='lbl bld'>
               Your Best Shot Lies With ConnectinSkillz
             </label>
@@ -18,7 +28,7 @@ const Header = ({ forwardRef }) => {
               </div>
               <label className='b-marg-ud'>How it works</label>
             </div>
-          </div>
+          </motion.div>
           <div className='rbanner'>
             <div className='wcircle'>
               <div className='bcircle rt'></div>
